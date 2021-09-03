@@ -1,3 +1,3 @@
 ### Travel App UI (android)
 
-![Home Screen](./assets/images/Home.jpg)
+<img src="./assets/images/Home.jpg" width="30%" height="30%" alt="Home Screen">
