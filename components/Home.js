@@ -64,8 +64,16 @@ const Home = ({navigation}) => {
                 {/* Header */}
                 <View style={styles.menuWrapper}>
                     {/* <Feather name="menu" size={32} color={colors.black} style={styles.menuIcon} /> */}
-                    <Image source={menuImg} style={styles.menuIcon}/>
-                    <Image source={profileImg} style={styles.profileImage}/>
+                    <TouchableOpacity
+                        onPress={()=>console.log('hello')}
+                    >
+                        <Image source={menuImg} style={styles.menuIcon}/>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={()=>navigation.navigate("Profile")}
+                    >
+                        <Image source={profileImg} style={styles.profileImage}/>
+                    </TouchableOpacity>
                 </View>
                 
                 {/* Discover */}
@@ -141,6 +149,7 @@ const styles = StyleSheet.create({
     menuIcon: {
         width:24,
         height: 24,
+        // marginTop: -5
     },
     discoverWrapper: {
         marginHorizontal: 20,
