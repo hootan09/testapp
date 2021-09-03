@@ -34,9 +34,10 @@ const TabNavigator = () =>{
       <Tab.Screen name="Home" component={Home}
         options={{
           tabBarLabel: "Home",
+          headerShown: false,
           tabBarIcon: ({ color, size }) => (
             <Entypo name="home" color={color} size={size} />
-          ),
+            ),
         }}
       />
       <Tab.Screen name="Liked" component={Liked}
@@ -66,7 +67,7 @@ const App = () => {
           <Stack.Screen
             name="TabNavigator" component={TabNavigator} 
             options={{
-              headerShown: false
+              headerShown: false,
             }}
             />
           <Stack.Screen
