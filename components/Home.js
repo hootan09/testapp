@@ -113,7 +113,7 @@ const Home = ({navigation}) => {
                 {/* LearMore */}
                 <View style={styles.learnMoreWrapper}>
                     <Text style={styles.learnMoreTitle}>Learn More</Text>
-                    <View style={[styles.learnMoreItemsWrapper, {marginLeft: 20,}]}>
+                    <View style={[styles.learnMoreItemsWrapper]}>
                         <FlatList 
                             data={learnMoreData}
                             renderItem={renderlearnMoreItem}
@@ -239,7 +239,9 @@ const styles = StyleSheet.create({
         fontSize: 24,
         color:colors.black
     },
-    learnMoreWrapper: {},
+    learnMoreWrapper: {
+        marginHorizontal: 20,
+    },
     learnMoreTitle: {
         marginHorizontal: 20,
         fontFamily: "Lato-Bold",
@@ -253,7 +255,7 @@ const styles = StyleSheet.create({
         width: 170,
         height: 180,
         justifyContent: "flex-end",
-        marginRight: 20,
+        marginRight: 10,
     },
     learnMoreItemImage: {
         borderRadius: 20,
